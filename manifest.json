@@ -1,0 +1,49 @@
+{
+  "manifest_version": 3,
+  "name": "Refyne",
+  "version": "2.0.2",
+  "description": "AI-powered writing assistant with offline support",
+  "permissions": [
+    "storage",
+    "activeTab",
+    "contextMenus"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": [
+        "components/text-analyzer.js",
+        "components/ai-engine.js",
+        "components/tooltip-manager.js",
+        "content.js"
+      ],
+      "run_at": "document_end"
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Refyne",
+    "default_icon": {
+      "16": "icons/pen.png",
+      "32": "icons/pen.png",
+      "48": "icons/pen.png",
+      "128": "icons/pen.png"
+    }
+  },
+  "icons": {
+    "16": "icons/pen.png",
+    "32": "icons/pen.png",
+    "48": "icons/pen.png",
+    "128": "icons/pen.png"
+  },
+  "web_accessible_resources": [{
+    "resources": ["models/*", "libs/*"],
+    "matches": ["<all_urls>"]
+  }]
+}
