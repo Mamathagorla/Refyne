@@ -1,10 +1,10 @@
-Refyne Demo
+### Refyne Demo
 A browser extension prototype demonstrating core functionalities of browser-based automation and interaction through background scripts, content scripts, and popup interfaces.
 
-Overview
+## Overview
 Refyne Demo showcases the fundamental architecture of browser extensions, illustrating how extensions can interact with web pages, manage background processes, and provide intuitive user interfaces. This project serves as an educational foundation for understanding extension development and can be extended for production-level applications.
 
-Architecture
+## Architecture
 graph TB
     A[Browser Extension] --> B[Background Script]
     A --> C[Content Script]
@@ -26,16 +26,15 @@ graph TB
     I --> O[Feature Triggers]
     J --> P[Settings]
 
-
-
-Features
+## Features
 Background Script Management - Handles browser events and extension lifecycle
 Content Script Integration - Enables direct interaction with web page elements
 Popup Interface - Provides quick access to extension features through an intuitive UI
 Modular Architecture - Organized JavaScript structure for enhanced maintainability
 Lightweight Design - Fast performance with minimal resource overhead
 Extensible Framework - Easy to modify and adapt for custom use cases
-Project Structure
+
+## Project Structure
 Refyne-Demo/
 │
 ├── manifest.json          # Extension manifest configuration
@@ -46,61 +45,71 @@ Refyne-Demo/
 ├── components/            # Additional UI or logic components
 ├── icons/                 # Extension icons and assets
 └── test.html              # Demo/test page for development
-Installation
-Prerequisites
+
+## Installation
+# Prerequisites
 Chrome, Edge, Brave, or any Chromium-based browser
 Basic understanding of browser extension development (optional)
-Steps
-Clone the repository:
+
+## Steps
+1-Clone the repository:
 
 git clone https://github.com/BitGladiator/Refyne-Demo.git
 cd Refyne-Demo
-Open your browser's extension management page:
+
+2-Open your browser's extension management page:
 
 Chrome: Navigate to chrome://extensions/
 Edge: Navigate to edge://extensions/
 Brave: Navigate to brave://extensions/
-Enable Developer Mode:
+
+3-Enable Developer Mode:
 
 Toggle the "Developer mode" switch in the top-right corner
-Load the extension:
+
+4-Load the extension:
 
 Click "Load unpacked"
 Select the Refyne-Demo folder from your file system
-Verify installation:
+
+5-Verify installation:
 
 The extension icon should appear in your browser toolbar
 You may need to pin it for easier access
-Usage
-Basic Operations
-Access the Extension:
+
+## Usage
+# Basic Operations
+# Access the Extension:
 
 Click the Refyne Demo icon in your browser toolbar
 The popup interface will display available features
-Page Interaction:
+
+# Page Interaction:
 
 Navigate to any web page
 The content script will automatically inject and enable page-level interactions
 Use the popup controls to trigger specific actions
-Background Operations:
+
+# Background Operations:
 
 Background processes run continuously while the extension is active
 Monitor browser console for debugging information
-Testing
+## Testing
 Use the included test.html file to experiment with extension features in a controlled environment:
 
-# Open test.html in your browser
-# Ensure the extension is loaded and active
-Development
-Extension Workflow
+#Open test.html in your browser
+#Ensure the extension is loaded and active
 
-Extending Functionality
-Adding New Features:
+## Development
+# Extension Workflow
+
+# Extending Functionality
+# Adding New Features:
 
 Create new components in the components/ directory
 Update manifest.json to include required permissions
 Modify background.js or content.js to implement new logic
-Modifying the Popup:
+# Modifying the Popup:
 
 Edit popup.html for UI structure changes
 Update popup.js for new interactive functionality
