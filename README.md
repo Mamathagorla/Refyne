@@ -37,6 +37,7 @@ Lightweight Design - Fast performance with minimal resource overhead
 Extensible Framework - Easy to modify and adapt for custom use cases
 
 ## Project Structure
+```text
 Refyne-Demo/
 │
 ├── manifest.json          # Extension manifest configuration
@@ -47,7 +48,7 @@ Refyne-Demo/
 ├── components/            # Additional UI or logic components
 ├── icons/                 # Extension icons and assets
 └── test.html              # Demo/test page for development
-
+```
 ## Installation
 ### Prerequisites
 Chrome, Edge, Brave, or any Chromium-based browser
@@ -161,11 +162,13 @@ Edge: Version 88+
 Brave: Version 1.20+
 Other Chromium-based browsers with Manifest V3 support
 ### Core Components
-Component	        Purpose	                                        File
-Background Script	Handles extension lifecycle and browser events	background.js
-Content Script	    Interacts with web page content	                content.js
-Popup UI	        Provides user interface for extension controls	popup.html, popup.js
-Manifest	        Defines extension configuration and permissions	manifest.json
+| Component        | Purpose                                   | File(s)                  |
+|------------------|-------------------------------------------|--------------------------|
+| Background Script| Handles extension lifecycle and browser events | background.js            |
+| Content Script   | Interacts with web page content           | content.js               |
+| Popup UI         | Provides user interface for extension controls | popup.html, popup.js     |
+| Manifest         | Defines extension configuration and permissions | manifest.json            |
+
 ## Contributing
 Contributions are welcome. To contribute:
 
